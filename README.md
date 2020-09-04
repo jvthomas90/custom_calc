@@ -1,7 +1,7 @@
 # custom_calc
 CS 1.0 Custom Calculator Assignment
 
-##Astrophysics calculations!
+## Astrophysics calculations!
 
 ### E = mC^2
 Lines 1 through 5 is simply a tribute to Einstein's infamous energy-mass equivalency formula
