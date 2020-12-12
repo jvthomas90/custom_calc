@@ -1,0 +1,24 @@
+<FORM name="DilationCalc">
+
+    <font size="3">Enter a value for c and a distance then click Calculate: </font><br><br>
+    <font size="3">Enter a percentage of c: </font><INPUT type="text" size="20" name="CValue"><br>     
+    <font size="3">Enter a distance in light years: </font><INPUT type="text" size="14" name="Distance"><br><br>    
+    <INPUT type="button" class="button button1" value="Calculate" onclick= "
+    
+    // Calculate the distance dilated to at entered value of c:   
+    document.DilationCalc.Dilation.value = document.DilationCalc.Distance.value * 
+    Math.sqrt (1 - ((document.DilationCalc.CValue.value * document.DilationCalc.CValue.value) / (100 * 100)));
+    
+    // Calculate time measured from spacecraft:
+    document.DilationCalc.Spaceship.value = document.DilationCalc.Dilation.value / (document.DilationCalc.CValue.value * 0.01);
+    
+    // Calculate time measured from Earth:
+    document.DilationCalc.Earth.value = document.DilationCalc.Distance.value * (100 / document.DilationCalc.CValue.value);"><br><br>
+
+    <font size="3">The distance is dilated to: </font> <INPUT type="text" size="20" name="Dilation"><font size="3"> light years</font><br><br>
+    
+    <font size="3">The journey time as viewed from Earth (years):</font>  <INPUT type="text" size="20" name="Earth"><br>
+    <font size="3">The journey time as viewed from the spaceship (years):</font>  <INPUT type="text" size="20" name="Spaceship"><br><br>
+    
+</FORM>
+    
